@@ -57,6 +57,13 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.codPrestamoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cedClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cuotaMensualDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plazoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tasaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.montoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.prestamosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.baseDatosEECOMPSADataSet = new II_proyecto_Jeison.baseDatosEECOMPSADataSet();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -72,13 +79,6 @@
             this.baseDatosEECOMPSADataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.prestamosTableAdapter = new II_proyecto_Jeison.baseDatosEECOMPSADataSetTableAdapters.prestamosTableAdapter();
             this.tableAdapterManager = new II_proyecto_Jeison.baseDatosEECOMPSADataSetTableAdapters.TableAdapterManager();
-            this.codPrestamoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cedClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cuotaMensualDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.plazoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tasaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.montoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -132,9 +132,9 @@
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(339, 18);
+            this.panel4.Location = new System.Drawing.Point(370, 18);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(337, 384);
+            this.panel4.Size = new System.Drawing.Size(337, 355);
             this.panel4.TabIndex = 25;
             // 
             // textBox4
@@ -216,7 +216,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(27, 18);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(306, 386);
+            this.panel3.Size = new System.Drawing.Size(306, 355);
             this.panel3.TabIndex = 0;
             // 
             // plazo
@@ -311,7 +311,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(256, 408);
+            this.button2.Location = new System.Drawing.Point(275, 395);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 23);
             this.button2.TabIndex = 24;
@@ -362,6 +362,55 @@
             this.dataGridView1.Size = new System.Drawing.Size(718, 304);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // codPrestamoDataGridViewTextBoxColumn
+            // 
+            this.codPrestamoDataGridViewTextBoxColumn.DataPropertyName = "codPrestamo";
+            this.codPrestamoDataGridViewTextBoxColumn.HeaderText = "codPrestamo";
+            this.codPrestamoDataGridViewTextBoxColumn.Name = "codPrestamoDataGridViewTextBoxColumn";
+            this.codPrestamoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cedClienteDataGridViewTextBoxColumn
+            // 
+            this.cedClienteDataGridViewTextBoxColumn.DataPropertyName = "cedCliente";
+            this.cedClienteDataGridViewTextBoxColumn.HeaderText = "cedCliente";
+            this.cedClienteDataGridViewTextBoxColumn.Name = "cedClienteDataGridViewTextBoxColumn";
+            // 
+            // cuotaMensualDataGridViewTextBoxColumn
+            // 
+            this.cuotaMensualDataGridViewTextBoxColumn.DataPropertyName = "cuotaMensual";
+            this.cuotaMensualDataGridViewTextBoxColumn.HeaderText = "cuotaMensual";
+            this.cuotaMensualDataGridViewTextBoxColumn.Name = "cuotaMensualDataGridViewTextBoxColumn";
+            // 
+            // plazoDataGridViewTextBoxColumn
+            // 
+            this.plazoDataGridViewTextBoxColumn.DataPropertyName = "plazo";
+            this.plazoDataGridViewTextBoxColumn.HeaderText = "plazo";
+            this.plazoDataGridViewTextBoxColumn.Name = "plazoDataGridViewTextBoxColumn";
+            // 
+            // tasaDataGridViewTextBoxColumn
+            // 
+            this.tasaDataGridViewTextBoxColumn.DataPropertyName = "tasa";
+            this.tasaDataGridViewTextBoxColumn.HeaderText = "tasa";
+            this.tasaDataGridViewTextBoxColumn.Name = "tasaDataGridViewTextBoxColumn";
+            // 
+            // montoDataGridViewTextBoxColumn
+            // 
+            this.montoDataGridViewTextBoxColumn.DataPropertyName = "monto";
+            this.montoDataGridViewTextBoxColumn.HeaderText = "monto";
+            this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
+            // 
+            // Edit
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Edit.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edit.HeaderText = "Editar";
+            this.Edit.Name = "Edit";
+            this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Edit.Text = "modificar";
+            this.Edit.UseColumnTextForButtonValue = true;
             // 
             // prestamosBindingSource
             // 
@@ -503,55 +552,6 @@
             this.tableAdapterManager.sociosTableAdapter = null;
             this.tableAdapterManager.telefonoPersonasTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = II_proyecto_Jeison.baseDatosEECOMPSADataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // codPrestamoDataGridViewTextBoxColumn
-            // 
-            this.codPrestamoDataGridViewTextBoxColumn.DataPropertyName = "codPrestamo";
-            this.codPrestamoDataGridViewTextBoxColumn.HeaderText = "codPrestamo";
-            this.codPrestamoDataGridViewTextBoxColumn.Name = "codPrestamoDataGridViewTextBoxColumn";
-            this.codPrestamoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cedClienteDataGridViewTextBoxColumn
-            // 
-            this.cedClienteDataGridViewTextBoxColumn.DataPropertyName = "cedCliente";
-            this.cedClienteDataGridViewTextBoxColumn.HeaderText = "cedCliente";
-            this.cedClienteDataGridViewTextBoxColumn.Name = "cedClienteDataGridViewTextBoxColumn";
-            // 
-            // cuotaMensualDataGridViewTextBoxColumn
-            // 
-            this.cuotaMensualDataGridViewTextBoxColumn.DataPropertyName = "cuotaMensual";
-            this.cuotaMensualDataGridViewTextBoxColumn.HeaderText = "cuotaMensual";
-            this.cuotaMensualDataGridViewTextBoxColumn.Name = "cuotaMensualDataGridViewTextBoxColumn";
-            // 
-            // plazoDataGridViewTextBoxColumn
-            // 
-            this.plazoDataGridViewTextBoxColumn.DataPropertyName = "plazo";
-            this.plazoDataGridViewTextBoxColumn.HeaderText = "plazo";
-            this.plazoDataGridViewTextBoxColumn.Name = "plazoDataGridViewTextBoxColumn";
-            // 
-            // tasaDataGridViewTextBoxColumn
-            // 
-            this.tasaDataGridViewTextBoxColumn.DataPropertyName = "tasa";
-            this.tasaDataGridViewTextBoxColumn.HeaderText = "tasa";
-            this.tasaDataGridViewTextBoxColumn.Name = "tasaDataGridViewTextBoxColumn";
-            // 
-            // montoDataGridViewTextBoxColumn
-            // 
-            this.montoDataGridViewTextBoxColumn.DataPropertyName = "monto";
-            this.montoDataGridViewTextBoxColumn.HeaderText = "monto";
-            this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
-            // 
-            // Edit
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.Edit.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit.HeaderText = "Editar";
-            this.Edit.Name = "Edit";
-            this.Edit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Edit.Text = "modificar";
-            this.Edit.UseColumnTextForButtonValue = true;
             // 
             // Prestamos
             // 
