@@ -63,6 +63,26 @@ namespace II_proyecto_Jeison.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _318_9565 {
+            get {
+                object obj = ResourceManager.GetObject("318-9565", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap consultas {
+            get {
+                object obj = ResourceManager.GetObject("consultas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap prestamo {
             get {
                 object obj = ResourceManager.GetObject("prestamo", resourceCulture);
@@ -76,6 +96,16 @@ namespace II_proyecto_Jeison.Properties {
         internal static System.Drawing.Bitmap registro {
             get {
                 object obj = ResourceManager.GetObject("registro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap salir {
+            get {
+                object obj = ResourceManager.GetObject("salir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
